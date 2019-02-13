@@ -23,6 +23,50 @@
   color: #61dafb;
 }
 
+.Board {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  border: 2px solid red;
+}
+
+.First-player-pos {
+  text-align: center;
+}
+
+.Fourth-player-pos {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -100%);
+}
+
+.Second-player-pos {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -100%);
+}
+
+.Third-player-pos {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+img {
+  width:100px;
+  height:100px;
+  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+.Vertical-center-image {
+  transform: translate(0%, 50%);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

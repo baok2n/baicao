@@ -5,21 +5,50 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="Board">
+        {/* 12h */}
+        <div className="First-player-pos">
+          <div>
+            12h
+          </div>
+          <button>
+            Reveal
+          </button>
+          <div>
+            <img/>
+            <img/>
+            <img/>
+          </div>
+        </div>
+
+        {/* 3h + 9h */}
+        <div className="Fourth-player-pos">
+          9h
+            <button>
+            Reveal
+            </button>
+            <img className="Vertical-center-image"/>
+        </div>
+        <div className="Second-player-pos">
+         <img className="Vertical-center-image"/>
+          <button>
+            Reveal
+            </button>
+          3h
+          </div>
+
+        {/* 6h */}
+        <div className="Third-player-pos">
+          <div>
+            <img/>
+          </div>          
+          <button>
+            Reveal
+          </button>
+          <div>
+            6h
+          </div>
+        </div>
       </div>
     );
   }
